@@ -1,0 +1,19 @@
+<?php
+
+$n = 30;
+$sum = 0;
+$prob = 1;
+for($i = 0; $i < $n; $i++) {
+    $sum = $sum + $i;
+    echo("$i +");
+}
+$sum = $sum + $n;
+echo("$n = $sum<br> <br>");
+
+for($i = 1; $i < $n; $i++) {
+    $prob = $prob * $i;
+    echo("$i *");
+}
+$prob = $prob * $n;
+echo("$n = $prob");
+?>
