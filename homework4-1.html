@@ -1,0 +1,155 @@
+<?php
+$link = mysqli_connect("localhost", 'root', '', 'classscore');
+$order = isset($_GET['order']) ? $_GET['order'] : null;
+?>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>homework4-1</title>
+    <style>
+        .input-wrap {
+            width: 960px;
+            margin: 0 auto;
+        }
+        h1 { text-align: center; } 
+        th, td { text-align: center; }
+        table {
+            border: 1px solid #000;
+            margin: 0 auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        a { text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="input-wrap">
+        <h1>이용권 신청서</h1>
+        <form action="homework4-1.php" method="POST">
+            <label for="customer_name">고객 성명:</label>
+            <input type="text" id="customer_name" name="customer_name" required><br><br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>구분</th>
+                        <th>어린이 (수량)</th>
+                        <th>어른 (수량)</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>입장권 (7,000/10,000)</td>
+                        <td>
+                            <select name="child_ticket1">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="adult_ticket1">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                        <td>입장</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>BIG3 (12,000/16,000)</td>
+                        <td>
+                            <select name="child_ticket2">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="adult_ticket2">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                        <td>입장+놀이3종</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>자유이용권 (21,000/26,000)</td>
+                        <td>
+                            <select name="child_ticket3">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="adult_ticket3">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                        <td>입장+놀이자유</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>연간이용권 (70,000/90,000)</td>
+                        <td>
+                            <select name="child_ticket4">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="adult_ticket4">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                        <td>입장+놀이자유</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <input type="submit" value="제출">
+        </form>
+
+        <br>
+        <p><?php echo date("h:i:sa"); ?></p>
+
+        <?php
+        if (isset($_POST['customer_name'])) {
+            echo "<h3>" . date("Y년 m월 d일") . " " . htmlspecialchars($_POST['customer_name']) . " 고객님 이용해 주셔서 감사합니다.</h3>";
+        }
+        ?>
+    </div>
+</body>
+</html>
