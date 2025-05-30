@@ -1,5 +1,5 @@
 # Yeoincheol.github.io
-컴퓨터공학과-20221174=여인철
+컴퓨터공학과-20221174-여인철
 
 [**homework2-1**](https://Yeoincheol.github.io/homework2-1.html)<br>
 [**homework2-2**](https://Yeoincheol.github.io/homework2-2.html)<br>
