@@ -14,5 +14,5 @@ Yeoincheol.github.io
 [**homework3-5**](https://Yeoincheol.github.io/homework3-5.html)<br>
 
 [**homework4-1**](https://Yeoincheol.github.io/homework4-1.html)<br>
-ㄴ 접속 후 우클틱 또는 ctrl + u를 누를시 소스코드를 확인할 수 있습니다.
+ㄴ 접속 후 우클틱 후 페이지 소스보기 클릭 또는 ctrl + u를 누를시 소스코드를 확인할 수 있습니다.
 
