@@ -29,7 +29,7 @@ $order = isset($_GET['order']) ? $_GET['order'] : null;
 <body>
     <div class="input-wrap">
         <h1>이용권 신청서</h1>
-        <form action="homework4-1.php" method="POST">
+        <form action="homework.php" method="POST">
             <label for="customer_name">고객 성명:</label>
             <input type="text" id="customer_name" name="customer_name" required><br><br>
 
@@ -145,11 +145,6 @@ $order = isset($_GET['order']) ? $_GET['order'] : null;
         <br>
         <p><?php echo date("h:i:sa"); ?></p>
 
-        <?php
-        if (isset($_POST['customer_name'])) {
-            echo "<h3>" . date("Y년 m월 d일") . " " . htmlspecialchars($_POST['customer_name']) . " 고객님 이용해 주셔서 감사합니다.</h3>";
-        }
-        ?>
-    </div>
+    
 </body>
 </html>
