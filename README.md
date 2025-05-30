@@ -1,4 +1,5 @@
 # Yeoincheol.github.io
+컴퓨터공학과-20221174=여인철
 
 [**homework2-1**](https://Yeoincheol.github.io/homework2-1.html)<br>
 [**homework2-2**](https://Yeoincheol.github.io/homework2-2.html)<br>
@@ -12,5 +13,5 @@
 [**homework3-5**](https://Yeoincheol.github.io/homework3-5.html)<br>
 
 [**homework4-1**](https://Yeoincheol.github.io/homework4-1.html)<br>
+ㄴ 접속 후 우클틱 또는 ctrl + u를 누를시 소스코드를 확인할 수 있습니다.
 
-20221174 / 여인철
